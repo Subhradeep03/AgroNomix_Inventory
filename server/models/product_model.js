@@ -33,8 +33,7 @@ const Products = new mongoose.Schema({
         required: true,
     },
     store_id: {
-        type: mongoose.ObjectId,
-        ref: "Store",
+        type: String,
         required: true,
     }
 })
