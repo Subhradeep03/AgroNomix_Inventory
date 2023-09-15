@@ -28,10 +28,9 @@ app.use('/api/v1/product', require('./routes/product_route'))
 app.use('/api/v1/auth',require('./routes/auth_route'))
 app.use('/api/v1/cart',require('./routes/cart_route'))
 app.use('/api/v1/order',require('./routes/order_route'))
-app.use()
 
 // razorpay
-export const instance = new Razorpay({
+exports,instance = new Razorpay({
     key_id: process.env.RAZORPAY_API_KEY ,
     key_secret: process.env.RAZORPAY_API_SECRET,
 });
