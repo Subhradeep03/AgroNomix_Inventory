@@ -1,5 +1,5 @@
 const orderModel = require("../models/order_model.js");
-const { instance } = require("../index.js");
+const { instance } = require("../server.js");
 const crypto = require("crypto");
 
 exports.orderCheckoutController = async (req, res) => {
